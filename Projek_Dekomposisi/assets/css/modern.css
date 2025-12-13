@@ -1,0 +1,295 @@
+/* Modern Dashboard Style - Kekinian Style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3f37c9;
+    --accent-color: #4895ef;
+    --success-color: #4cc9f0;
+    --dark-bg: #1e1e2d;
+    --light-bg: #f9fafe;
+    --sidebar-bg: #ffffff;
+    --text-color: #2b2b2b;
+    --text-muted: #809fb8;
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --glass-bg: rgba(255, 255, 255, 0.95);
+    --border-radius: 16px;
+    --gradient-primary: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%);
+    --gradient-header: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: var(--sidebar-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 20px;
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.03);
+    border-right: 1px solid rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+.sidebar-header {
+    padding: 20px 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar-header h4 {
+    color: var(--primary-color);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    border-radius: 12px;
+    color: var(--text-muted);
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.nav-link i {
+    font-size: 1.2rem;
+    margin-right: 12px;
+    width: 24px;
+    text-align: center;
+    transition: inherit;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: var(--gradient-primary);
+    color: #fff;
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+}
+
+.nav-link:hover i,
+.nav-link.active i {
+    color: #fff;
+}
+
+/* Main Content */
+.content {
+    margin-left: 260px;
+    padding: 30px;
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+/* Cards */
+.card-custom {
+    background: #fff;
+    border-radius: var(--border-radius);
+    padding: 25px;
+    box-shadow: var(--card-shadow);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.stat-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    transition: transform 0.3s ease;
+}
+
+.card-custom:hover .stat-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.bg-primary-soft {
+    background: rgba(67, 97, 238, 0.1);
+    color: var(--primary-color);
+}
+
+.bg-success-soft {
+    background: rgba(76, 201, 240, 0.1);
+    color: var(--success-color);
+}
+
+.bg-warning-soft {
+    background: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+}
+
+/* Table Styling - ENHANCED */
+.table-responsive {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.table-custom {
+    background: #fff;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.table-custom thead {
+    background: var(--gradient-primary);
+}
+
+.table-custom th {
+    font-weight: 600;
+    color: #fff;
+    /* White text for contrast */
+    border: none;
+    padding: 18px 15px;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.table-custom td {
+    padding: 16px 15px;
+    vertical-align: middle;
+    color: #555;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 0.95rem;
+}
+
+.table-custom tbody tr:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.002);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+    transition: all 0.2s ease;
+}
+
+.table-custom tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Bootstrap Table Overrides for 'table-bordered' classes used in perhitungan */
+.table-bordered {
+    border-color: #eef2f6 !important;
+}
+
+.table-bordered th {
+    background: #f8f9fa;
+    color: var(--text-color);
+    border-color: #eef2f6 !important;
+}
+
+.table-bordered td {
+    border-color: #eef2f6 !important;
+}
+
+.table-dark th {
+    background: #2b2d42 !important;
+    color: #fff !important;
+}
+
+/* Buttons */
+.btn-primary-custom {
+    background: var(--gradient-primary);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(67, 97, 238, 0.25);
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(67, 97, 238, 0.35);
+    color: #fff;
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-color);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: 50px;
+}
+
+/* PRINT STYLES */
+@media print {
+
+    .sidebar,
+    .btn,
+    form,
+    .no-print {
+        display: none !important;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .card-custom {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    /* Ensure charts print */
+    canvas {
+        min-height: 300px;
+        width: 100% !important;
+    }
+}
