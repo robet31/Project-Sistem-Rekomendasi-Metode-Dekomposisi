@@ -1,0 +1,27 @@
+[
+    {
+        "bulan": "2011-01",
+        "penjualan": 27619
+    },
+    {
+        "bulan": "2011-02",
+        "penjualan": 25532
+    },
+    {
+        "bulan": "2011-03",
+        "penjualan": 32275
+    },
+    {
+        "bulan": "2011-04",
+        "penjualan": 21128
+    },
+    {
+        "bulan": "2011-05",
+        "penjualan": 19554
+    },
+    {
+        "bulan": "2011-06",
+        "penjualan": 26175
+    }
+    // ... add the remaining rows from dekomposisi.sql ...
+]
