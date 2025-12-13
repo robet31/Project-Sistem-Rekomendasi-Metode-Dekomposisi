@@ -1,4 +1,4 @@
-php
+
 <?php
 // Cek apakah berjalan di Environment Cloud (Vercel) atau Local
 $servername = getenv('DB_HOST') ? getenv('DB_HOST') : "localhost";
