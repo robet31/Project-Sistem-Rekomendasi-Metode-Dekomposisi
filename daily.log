@@ -1,1 +1,1 @@
-refactor: clean up redundant logic in handler - 2026-08-30
+fix: correct off-by-one on loop iteration - 2026-09-02
