@@ -1,1 +1,1 @@
-fix: resolve undefined variable on session - 2026-09-27
+refactor: simplify nested conditional - 2026-09-29
