@@ -1,1 +1,1 @@
-fix: prevent crash on malformed request - 2026-10-01
+test: add unit test for edge case - 2026-10-02
