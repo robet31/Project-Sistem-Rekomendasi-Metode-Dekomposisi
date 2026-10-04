@@ -1,1 +1,1 @@
-perf: optimize database query execution - 2026-10-03
+fix: sanitize input to prevent injection - 2026-10-04
