@@ -1,1 +1,1 @@
-refactor: clean up redundant logic in handler - 2026-11-03
+fix: prevent crash on malformed request - 2026-11-03
