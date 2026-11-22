@@ -1,1 +1,1 @@
-fix: resolve undefined variable on session - 2026-11-21
+fix: patch memory leak on long process - 2026-11-22
